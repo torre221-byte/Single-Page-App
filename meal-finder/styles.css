@@ -69,6 +69,10 @@ button:focus {
 }
 
 #results {
+  text-align: center;
+}
+
+#results:has(article) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
@@ -109,4 +113,34 @@ footer {
 
 footer a {
   color: #f5b041;
+}
+
+article button {
+  margin-top: 0.75rem;
+}
+
+.details-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-card img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details-card h3 {
+  color: #c0392b;
+}
+
+.instructions {
+  white-space: pre-line;
 }
